@@ -18,7 +18,8 @@ docker-compose up
 
 
 ## Como testar a aplicação
-- `POST`localhost:8080/api/audio
+### `POST`
+`https://localhost:8080/api/audio`
 
 Body
 ```
@@ -45,3 +46,46 @@ Body
         }
     }
 }
+```
+### `GET`
+- Busca todos os áudios inseridos
+`https://localhost:8080/api/audio`
+
+### `GET`
+- Substitua {id} por um id existente para buscar esse determinado áudio
+`https://localhost:8080/api/audio/{id}`
+
+### `DELETE`
+- Substitua {id} por um id existente para deletar esse determinado áudio
+`https://localhost:8080/api/audio/{id}`
+
+### `PUT`
+- Substitua {id} por um id existente para alterar esse determinado áudio
+`https://localhost:8080/api/audio/{id}`
+
+Body
+```
+{
+	"name": "audio3",
+	"duration": "2:30",
+	"author":"Igor",
+	"url":"url",
+	"format":"mp3",
+	"metaData":
+	{
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_long_name": "MP2/3 (MPEG audio layer 2/3)",
+        "start_time": "0.025057",
+        "size": "12868682",
+        "bit_rate": "192011",
+        "probe_score": 51,
+        "tags": {
+            "major_brand": "dash",
+            "minor_version": "0",
+            "compatible_brands": "iso6mp41",
+            "encoder": "Lavf57.56.101"
+        }
+    }
+}
+```
