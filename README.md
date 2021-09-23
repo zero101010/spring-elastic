@@ -9,7 +9,7 @@ Utilizamos nesse projeto uma estrutura de pastas bem comum ao desenvolver a apli
 - Documents: São as definições das entidades que iremos usar dentro do projeto
 - Services: É a camada onde criaremos a lógica, e utilizamos tanto as definições do repository para ter acesso ao elastic como a classe definida em Documents
 - Controller: É a camada onde receberemos as requisições  http e chamaremos os serviços  para executar determinada função.
-
+Além disso setamos a url que vai ser usada para setar o elastic dentro do arquivo application.properties para que caso seja necessário possa ser modificado sem ser necessário mudar no código.
 ## Como rodar?
 - Para executar esse projeto é necessário ter o Docker e o docker-compose instalado, após a instalação basta rodar o comando abaixo:
 ```
