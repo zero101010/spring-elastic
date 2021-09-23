@@ -14,6 +14,8 @@ Utilizamos nesse projeto uma estrutura de pastas bem comum ao desenvolver a apli
 - Para executar esse projeto é necessário ter o Docker e o docker-compose instalado, após a instalação basta rodar o comando abaixo:
 ```
 docker-compose up
+```
+
 
 ## Como testar a aplicação
 - `POST`localhost:8080/api/audio
