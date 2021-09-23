@@ -1,5 +1,6 @@
 package com.ibm.elastic.document;
 
+import io.netty.handler.codec.serialization.ObjectEncoder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
@@ -26,6 +27,9 @@ public class Audio {
 
     @Field(type = FieldType.Text)
     private  String format;
+
+    @Field(type = FieldType.Object)
+    private Object metadata;
 
     public String getName() {
         return name;
@@ -73,5 +77,13 @@ public class Audio {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+
+    public Object getMetadata() {
+        return metadata;
+    }
+
+    public void setMetadata(Object metadata) {
+        this.metadata = metadata;
     }
 }

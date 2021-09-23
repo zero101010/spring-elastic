@@ -29,7 +29,7 @@ Body
 	"author":"Igor",
 	"url":"url",
 	"format":"mp4",
-	"metaData":
+	"metadata":
 	{
         "nb_streams": 1,
         "nb_programs": 0,
@@ -71,7 +71,7 @@ Body
 	"author":"Igor",
 	"url":"url",
 	"format":"mp3",
-	"metaData":
+	"metadata":
 	{
         "nb_streams": 1,
         "nb_programs": 0,

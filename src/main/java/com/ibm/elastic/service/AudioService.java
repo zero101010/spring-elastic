@@ -33,6 +33,7 @@ public class AudioService {
         audio.setDuration(audioBody.getDuration());
         audio.setFormat(audioBody.getFormat());
         audio.setUrl(audioBody.getUrl());
+        audio.setMetadata(audioBody.getMetadata());
         Audio updated = repository.save(audio);
         return updated;
     }
@@ -41,6 +42,5 @@ public class AudioService {
         Audio audio = repository.findById(id).orElse(null);
         repository.deleteById(id);
         return audio;
-
     }
 }
